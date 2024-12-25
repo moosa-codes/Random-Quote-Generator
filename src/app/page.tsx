@@ -68,14 +68,16 @@ export default function Home() {
         <div className="mb-4">
           <span className="font-semibold">Quoted by:</span>
           <p className="p-4 text-lg text-gray-900 border border-gray-300 rounded-md bg-gray-200">
-            {author}
+              {
+                author ? author : "Steve Jobs"
+             }
           </p>
         </div>
         <div className="mb-4">
           <span className="font-semibold">Category:</span>
           <p
             className="p-4 text-lg text-gray-800 border border-gray-300 rounded-md bg-gray-200">
-            {category}
+            {category ? category :"Success"}
           </p>
         </div>
         <div className="flex space-x-4">
